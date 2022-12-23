@@ -1,0 +1,13 @@
+.container {
+  background-color: red;
+  width: min-content;
+  position: relative;
+}
+
+.container img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
