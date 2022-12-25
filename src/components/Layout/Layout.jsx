@@ -10,8 +10,6 @@ const categories = [
 ];
 
 export const Layout = ({ children }) => {
-  console.log(styles)
-
   return (
     <>
       <video
@@ -23,9 +21,6 @@ export const Layout = ({ children }) => {
         poster="/images/cosmere.jpeg" />
 
       <div className={styles.navbar}>
-        {/* <h2>
-          Roy Rodriguez
-        </h2> */}
         {
           categories.map(({ name }) =>
             <p key={name}>{name}</p>
