@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
         autoPlay
         loop
         muted
-        src="/videos/hola.mp4"
+        src="https://cosmere.es/wp-content/uploads/2021/08/Fondocosmere.mp4"
         poster="/images/cosmere.jpeg" />
 
       <div className={styles.navbar}>
