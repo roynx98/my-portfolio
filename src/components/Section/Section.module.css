@@ -1,5 +1,7 @@
 .container {
   width: 100vw;
+  background-color: red;
+  position: relative;
 }
 
 .bodyContainer {
@@ -24,7 +26,10 @@
 }
 
 .blob {
-  margin-bottom: -20px;
+  position: absolute;
+  bottom: 100%;
+  /* width: 120vw; */
+  z-index: -1;
 }
 
 .text {
@@ -51,4 +56,9 @@
   letter-spacing: 0.4em;
   font-size: 1em;
   color: var(--highlight-color);
+}
+
+.end {
+  position: absolute;
+
 }

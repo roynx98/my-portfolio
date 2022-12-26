@@ -9,6 +9,8 @@ function App() {
     <Layout>
       <InteractiveImage style={{marginTop: 100}} />
       <Section />
+      <InteractiveImage style={{marginTop: 100}} />
+      <Section />
     </Layout>
   );
 }
