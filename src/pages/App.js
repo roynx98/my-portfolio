@@ -7,7 +7,7 @@ import styles from './App.module.css';
 function App() {
   return (
     <Layout>
-      <InteractiveImage />
+      <InteractiveImage style={{marginTop: 100}} />
       <Section />
     </Layout>
   );

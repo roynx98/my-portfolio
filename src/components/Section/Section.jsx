@@ -41,9 +41,6 @@ export const Section = () => {
           <p className={styles.text}>
             I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.
           </p>
-          <p className={styles.text}>
-            Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely.
-          </p>
         </div>
       </div>
 

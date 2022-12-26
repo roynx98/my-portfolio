@@ -5,8 +5,7 @@ const categories = [
   { name: 'Home' },
   { name: 'Web' },
   { name: 'Games' },
-  { name: 'About' },
-  { name: 'Resume' },
+  { name: 'Mobile' },
 ];
 
 export const Layout = ({ children }) => {
@@ -28,7 +27,9 @@ export const Layout = ({ children }) => {
         }
       </div>
 
-      {children}
+      <div className={styles.childrenContainer}>
+        {children}
+      </div>
     </>
   );
 };

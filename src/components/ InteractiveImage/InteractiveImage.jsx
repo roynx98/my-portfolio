@@ -2,13 +2,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 import styles from './InteractiveImage.module.css';
+import { isMobile } from 'react-device-detect';
 
-export const InteractiveImage = () => {
+export const InteractiveImage = ({ style, foregroundTransitionScale = 3 }) => {
   const containerRef = useRef();
-  const [offset, setOffest] = useState([100, 0]);
+  const [offset, setOffest] = useState([0, 0]);
 
   useEffect(() => {
-    window.addEventListener('mousemove', ({x, y}) => {
+    if (isMobile) {
+      return;
+    }
+
+    const mousemoveListener = ({ x, y }) => {
       if (!containerRef.current) {
         return;
       }
@@ -17,30 +22,30 @@ export const InteractiveImage = () => {
       const mx = containerRect.x + containerRect.width / 2;
       const my = containerRect.y + containerRect.height / 2;
       const scale = 0.01;
-      const max = 10;
       const offsetX = (x - mx) * scale;
       const offsetY = (y - my) * scale;
 
-
       setOffest([offsetX, offsetY]);
-    });
+    };
+
+    window.addEventListener('mousemove', mousemoveListener);
+
+    return () => {
+      window.removeEventListener('mousemove', mousemoveListener);
+    };
   }, []);
-  
+
   return (
-    <div ref={containerRef} className={styles.container}>
+    <div ref={containerRef} className={styles.container} style={style}>
       <img
-        src="/images/fondo2.png"
-        style={{transform: `translate(${offset[0]}px, ${offset[1]}px)`}}
-        width={500}
-        height={500} />
+        className={styles.background}
+        src="/images/cosmo.png"
+        style={{ transform: `translate(${offset[0]}px, ${offset[1]}px)` }} />
 
       <img
         className={styles.foreground}
-        style={{transform: `translate(${offset[0] * 2}px, ${offset[1] * 2}px)`}}
-        src="/images/picture.jpeg"
-        alt="Picture of the author"
-        width={200}
-        height={200} />
+        style={{ transform: `translate(${offset[0] * foregroundTransitionScale}px, ${offset[1] * foregroundTransitionScale}px)` }}
+        src="/images/picture.jpeg" />
 
     </div>
   );

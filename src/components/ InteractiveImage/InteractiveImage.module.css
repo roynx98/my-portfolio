@@ -1,16 +1,21 @@
 .container {
-  width: 300px;
-  height: 300px;
+  width: min-content;
+  overflow: hidden;
   position: relative;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none; 
+}
+
+.background {
+  width: 100vw;
+  max-width: 500px;
 }
 
 .foreground {
   position: absolute;
-  border-radius: 100px;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  border-radius: 1000px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 43%;
 }
