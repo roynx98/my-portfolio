@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
-  background-color: red;
   position: relative;
+  background-color: red;
 }
 
 .bodyContainer {
@@ -28,7 +28,6 @@
 .blob {
   position: absolute;
   bottom: 100%;
-  /* width: 120vw; */
   z-index: -1;
 }
 
@@ -39,8 +38,9 @@
   font-size: 1em;
   letter-spacing: 0.42px;
   font-weight: 900;
-  line-height: 40px;
+  line-height: 2em;
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 .title {
@@ -51,7 +51,7 @@
   font-size: 3em;
 }
 
-.subTitle {
+.subtitle {
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-size: 1em;
@@ -60,5 +60,4 @@
 
 .end {
   position: absolute;
-
 }

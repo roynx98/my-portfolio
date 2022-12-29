@@ -1,16 +1,18 @@
 import React from 'react';
 import styles from './Layout.module.css'
+import { BrowserRouter as Router } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const categories = [
-  { name: 'Home' },
-  { name: 'Web' },
-  { name: 'Games' },
-  { name: 'Mobile' },
+  { name: 'Home', id: '' },
+  { name: 'Web', id: 'web' },
+  { name: 'Games', id: 'games' },
+  { name: 'Mobile', id: 'mobile' },
 ];
 
 export const Layout = ({ children }) => {
   return (
-    <>
+    <Router>
       <video
         className={styles.backgroundVideo}
         autoPlay
@@ -21,8 +23,8 @@ export const Layout = ({ children }) => {
 
       <div className={styles.navbar}>
         {
-          categories.map(({ name }) =>
-            <p key={name}>{name}</p>
+          categories.map(({ name, id }) =>
+            <HashLink to={`#${id}`} smooth>{name}</HashLink>
           )
         }
       </div>
@@ -30,6 +32,6 @@ export const Layout = ({ children }) => {
       <div className={styles.childrenContainer}>
         {children}
       </div>
-    </>
+    </Router>
   );
 };

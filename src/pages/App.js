@@ -1,16 +1,37 @@
-import { InteractiveImage } from '../components/ InteractiveImage/InteractiveImage';
 import { Layout } from '../components/Layout/Layout';
+import { ProyectsGrid } from '../components/ProyectsGrid/ProyectsGrid';
 import { Section } from '../components/Section/Section';
-
-import styles from './App.module.css';
 
 function App() {
   return (
     <Layout>
-      <InteractiveImage style={{marginTop: 100}} />
-      <Section />
-      <InteractiveImage style={{marginTop: 100}} />
-      <Section />
+
+      <Section
+        title="Roy Rodriguez"
+        image="/images/picture.jpeg"
+        round
+        subtitle="Portfolio"
+        text="I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services." />
+
+      <Section
+        title="Web"
+        id="web"
+        image="/images/web.png">
+        <ProyectsGrid />
+      </Section>
+
+      <Section
+        title="Games"
+        id="games">
+        <ProyectsGrid />
+      </Section>
+
+      <Section
+        title="Mobile"
+        id="mobile">
+        <ProyectsGrid />
+      </Section>
+
     </Layout>
   );
 }

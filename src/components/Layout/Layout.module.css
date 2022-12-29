@@ -32,11 +32,16 @@
 
 .navbar > * {
   margin: 0 10px;
+  text-decoration: none;
+  color: white;
 }
 
+.navbar > *:hover {
+  color: var(--highlight-color);
+
+}
 .childrenContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
