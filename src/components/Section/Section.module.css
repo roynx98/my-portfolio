@@ -29,6 +29,16 @@
   position: absolute;
   bottom: 100%;
   z-index: -1;
+  animation: yo-yo 5s infinite alternate;
+}
+
+@keyframes yo-yo {
+  from { 
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0, 20px);
+  }
 }
 
 .text {

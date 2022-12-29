@@ -8,6 +8,7 @@ function App() {
 
       <Section
         title="Roy Rodriguez"
+        id="home"
         image="/images/picture.jpeg"
         round
         subtitle="Portfolio"

@@ -11,10 +11,6 @@
 }
 
 .navbar {
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: .08em;
-  font-weight: 700;
   background-color: black;
   height: 90px;
   box-shadow: 0 9px 12px 0 rgb(0 0 0 / 49%);
@@ -30,16 +26,23 @@
   z-index: 3;
 }
 
-.navbar > * {
+.navItem {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .08em;
+  font-weight: 700;
   margin: 0 10px;
-  text-decoration: none;
-  color: white;
+  cursor: pointer;
 }
 
-.navbar > *:hover {
+.navItemSelected {
   color: var(--highlight-color);
-
 }
+
+.navItem:hover {
+  color: var(--highlight-color);
+}
+
 .childrenContainer {
   display: flex;
   flex-direction: column;

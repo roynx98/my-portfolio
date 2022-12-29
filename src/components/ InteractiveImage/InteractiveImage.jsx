@@ -10,13 +10,14 @@ export const InteractiveImage = (props) => {
     foregroundTransitionScale = 3,
     src,
     round = false,
-    id
+    id,
+    className
   } = props;
   const containerRef = useRef();
   const [offset, setOffest] = useState([0, 0]);
 
   return (
-    <div id={id} ref={containerRef} className={styles.container} style={style}>
+    <div id={id} ref={containerRef} className={`${styles.container} ${className}`} style={style}>
       <img
         className={styles.background}
         src="/images/cosmo.png"
