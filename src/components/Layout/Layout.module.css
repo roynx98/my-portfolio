@@ -42,9 +42,11 @@
 
 .navItemSelected {
   color: var(--highlight-color);
+  text-shadow: 0 0 3px var(--highlight-color);
 }
 .navItem:hover {
   color: var(--highlight-color);
+  text-shadow: 0 0 3px var(--highlight-color);
 }
 
 .childrenContainer {
