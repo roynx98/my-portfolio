@@ -7,12 +7,16 @@ const categories = [
   { name: 'Home', id: 'home' },
   { name: 'Web', id: 'web' },
   { name: 'Games', id: 'games' },
-  { name: 'Mobile', id: 'mobile' },
+  { name: 'Mobile', id: 'mobile' }
+];
+const links = [
+  { icon: '/images/mail.svg', url: '' }
 ];
 
 const Navbar = () => {
   const [currentCategoryId, setCurrentCategoryId] = useState('home')
   const navbarRef = useRef();
+
 
   useEffect(() => {
     const categoriesDom = document.querySelectorAll('.category');
@@ -46,10 +50,24 @@ const Navbar = () => {
     <div className={styles.navbar} ref={navbarRef}>
       {
         categories.map(({ name, id }) =>
-          <p
+          <div
             key={id}
             onClick={handleNavClick(id)}
-            className={`${styles.navItem} ${id === currentCategoryId ? styles.navItemSelected : ''}`}>{name}</p>
+            className={`${styles.navItem} 
+            ${id === currentCategoryId ? styles.navItemSelected : ''}`}>{name}</div>
+        )
+      }
+
+      {
+        links.map(({ url, icon }) =>
+          <div className={styles.iconContainer}>
+            <svg className={styles.icon} fill="#000000" height="800px" width="800px" x="0px"
+              y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" >
+              <g id="mail-filled">
+                <path d="M24,5.7V21H0V5.7l12,10L24,5.7z M12,13l12-9.9V3H0v0.1L12,13z" />
+              </g>
+            </svg>
+          </div>
         )
       }
     </div>
@@ -65,7 +83,8 @@ export const Layout = ({ children }) => {
         autoPlay
         loop
         muted
-        src="https://cosmere.es/wp-content/uploads/2021/08/Fondocosmere.mp4"
+        playsInline
+        src="/videos/cosmere.mp4"
         poster="/images/cosmere.jpeg" />
 
       <Navbar />
