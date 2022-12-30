@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Layout.module.css'
 import { BrowserRouter as Router } from 'react-router-dom';
+import { scrollIntoView } from 'seamless-scroll-polyfill'
 
 const categories = [
   { name: 'Home', id: 'home' },
@@ -28,14 +29,18 @@ const Navbar = () => {
         setCurrentCategoryId(lastCategoryId);
       }
     }, {
-      rootMargin: '0px 0px -60% 0px'
+      rootMargin: '0px 0px -40% 0px'
     });
 
-    categoriesDom.forEach((category) => { 
+    categoriesDom.forEach((category) => {
       observer.observe(category);
     });
   }, []);
 
+  const handleNavClick = (id) => () => {
+    const element = document.getElementById('scroll' + id);
+    scrollIntoView(element, { behavior: 'smooth', top: 200, left: 0 });
+  };
 
   return (
     <div className={styles.navbar} ref={navbarRef}>
@@ -43,6 +48,7 @@ const Navbar = () => {
         categories.map(({ name, id }) =>
           <p
             key={id}
+            onClick={handleNavClick(id)}
             className={`${styles.navItem} ${id === currentCategoryId ? styles.navItemSelected : ''}`}>{name}</p>
         )
       }
