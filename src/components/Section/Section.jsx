@@ -61,9 +61,13 @@ export const Section = (props) => {
           </div>
         </div>
         {children}
-        <svg viewBox="0 0 1 1" className={styles.end}>
-          <polygon fill="black" points="0,0 0.5,0.05 1,0" />
-        </svg>
+
+        <div className={styles.endContainer}>
+          <svg viewBox="0 0 1 1" className={styles.end}>
+            <polygon fill="black" points="0,0 0.5,0.05 1,0" />
+          </svg>
+        </div>
+
       </div>
     </>
   );

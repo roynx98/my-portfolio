@@ -67,6 +67,7 @@
   color: var(--highlight-color);
 }
 
-.end {
-  position: absolute;
+.endContainer {
+  height: 70px;
+  overflow: hidden;
 }
