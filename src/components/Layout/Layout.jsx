@@ -17,7 +17,6 @@ const Navbar = () => {
   const [currentCategoryId, setCurrentCategoryId] = useState('home')
   const navbarRef = useRef();
 
-
   useEffect(() => {
     const categoriesDom = document.querySelectorAll('.category');
     let lastCategoryId = currentCategoryId;
@@ -43,7 +42,7 @@ const Navbar = () => {
 
   const handleNavClick = (id) => () => {
     const element = document.getElementById('scroll' + id);
-    scrollIntoView(element, { behavior: 'smooth', top: 200, left: 0 });
+    scrollIntoView(element, { behavior: 'smooth' });
   };
 
   return (
@@ -60,9 +59,9 @@ const Navbar = () => {
 
       {
         links.map(({ url, icon }) =>
-          <div className={styles.iconContainer}>
+          <div key={url} className={styles.iconContainer}>
             <svg className={styles.icon} fill="#000000" height="800px" width="800px" x="0px"
-              y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" >
+              y="0px" viewBox="0 0 24 24" >
               <g id="mail-filled">
                 <path d="M24,5.7V21H0V5.7l12,10L24,5.7z M12,13l12-9.9V3H0v0.1L12,13z" />
               </g>
