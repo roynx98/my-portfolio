@@ -23,12 +23,14 @@ function App() {
 
       <Section
         title="Games"
+        image="/images/games.png"
         id="games">
         <ProyectsGrid />
       </Section>
 
       <Section
         title="Mobile"
+        image="/images/mobile.png"
         id="mobile">
         <ProyectsGrid />
       </Section>
