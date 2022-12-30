@@ -45,9 +45,15 @@
   text-shadow: 0 0 3px var(--highlight-color);
 }
 
-.navItem:hover {
-  color: var(--highlight-color);
-  text-shadow: 0 0 3px var(--highlight-color);
+@media(hover) {
+  .navItem:hover {
+    color: var(--highlight-color);
+    text-shadow: 0 0 3px var(--highlight-color);
+  }
+  .iconContainer:hover .icon {
+    color: var(--highlight-color);
+    text-shadow: 0 0 3px var(--highlight-color);
+  }
 }
 
 .childrenContainer {
@@ -58,20 +64,19 @@
 
 .iconContainer {
   height: 100%;
+  margin: 0 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.iconContainer:hover .icon {
-  fill: var(--highlight-color);
-}
+
 
 .icon {
-  fill: white;
-  width: 15px;
-  height: 15px;
-  transition: fill .2s ease-out;
+  color: white;
+  font-size: 1.2em;
+  margin-left: ;
+  transition: color .2s ease-out;
 }
 
 .loaderContainer {

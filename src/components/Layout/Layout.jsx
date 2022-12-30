@@ -9,8 +9,10 @@ const categories = [
   { name: 'Games', id: 'games' },
   { name: 'Mobile', id: 'mobile' }
 ];
+
 const links = [
-  { icon: '/images/mail.svg', url: '' }
+  { icon: 'fa fa-envelope', url: 'mailto:roynx98@gmail.com' },
+  { icon: 'fa fa-github', url: 'https://github.com/roynx98' }
 ];
 
 const Navbar = () => {
@@ -60,12 +62,9 @@ const Navbar = () => {
       {
         links.map(({ url, icon }) =>
           <div key={url} className={styles.iconContainer}>
-            <svg className={styles.icon} fill="#000000" height="800px" width="800px" x="0px"
-              y="0px" viewBox="0 0 24 24" >
-              <g id="mail-filled">
-                <path d="M24,5.7V21H0V5.7l12,10L24,5.7z M12,13l12-9.9V3H0v0.1L12,13z" />
-              </g>
-            </svg>
+            <a href={url}>
+              <i className={`${icon} ${styles.icon}`} />
+            </a>
           </div>
         )
       }
