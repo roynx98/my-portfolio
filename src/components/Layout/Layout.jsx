@@ -85,7 +85,7 @@ export const Layout = ({ children }) => {
         muted
         playsInline
         src="/videos/cosmere.mp4"
-        poster="/images/cosmere.jpeg" />
+        poster="/images/cosmere.jpg" />
 
       <Navbar />
 
