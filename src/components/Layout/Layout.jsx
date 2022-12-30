@@ -74,10 +74,25 @@ const Navbar = () => {
 };
 
 export const Layout = ({ children }) => {
+  const videoRef = useRef();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    videoRef.current.addEventListener('loadeddata', (e) => {
+      setIsLoading(false);
+    });
+  }, []);
 
   return (
     <Router>
+      <div
+        className={styles.loaderContainer}
+        style={{ visibility: isLoading ? 'visible' : 'hidden' }}>
+        <span className={styles.loader} />
+      </div>
+
       <video
+        ref={videoRef}
         className={styles.backgroundVideo}
         autoPlay
         loop
