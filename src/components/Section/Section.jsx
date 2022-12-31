@@ -17,8 +17,7 @@ export const Section = (props) => {
     title,
     subtitle,
     children,
-    text = '',
-    marginTop = 100,
+    marginTop = 0,
     round = false,
     image,
     id = ''
@@ -53,10 +52,6 @@ export const Section = (props) => {
             {
               subtitle &&
               <p className={styles.subtitle}>{subtitle}</p>
-            }
-            {
-              text &&
-              <p className={styles.text}>{text}</p>
             }
           </div>
         </div>

@@ -4,15 +4,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { scrollIntoView } from 'seamless-scroll-polyfill'
 
 const categories = [
-  { name: 'Home', id: 'home' },
+  { name: 'About', id: 'about' },
   { name: 'Web', id: 'web' },
   { name: 'Games', id: 'games' },
   { name: 'Mobile', id: 'mobile' }
-];
-
-const links = [
-  { icon: 'fa fa-envelope', url: 'mailto:roynx98@gmail.com' },
-  { icon: 'fa fa-github', url: 'https://github.com/roynx98' }
 ];
 
 const Navbar = () => {
@@ -58,16 +53,6 @@ const Navbar = () => {
             ${id === currentCategoryId ? styles.navItemSelected : ''}`}>{name}</div>
         )
       }
-
-      {
-        links.map(({ url, icon }) =>
-          <div key={url} className={styles.iconContainer}>
-            <a href={url}>
-              <i className={`${icon} ${styles.icon}`} />
-            </a>
-          </div>
-        )
-      }
     </div>
   );
 };
@@ -77,7 +62,7 @@ export const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    videoRef.current.addEventListener('loadeddata', (e) => {
+    videoRef.current.addEventListener('canplaythrough', (e) => {
       setIsLoading(false);
     });
   }, []);

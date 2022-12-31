@@ -40,18 +40,6 @@
   }
 }
 
-.text {
-  text-shadow: 1px 1px 3px var(--highlight-color);
-  text-transform: uppercase;
-  list-style: 40px;
-  font-size: 1em;
-  letter-spacing: 0.42px;
-  font-weight: 900;
-  line-height: 2em;
-  margin-top: 40px;
-  padding-bottom: 20px;
-}
-
 .title {
   text-align: center;
   font-weight: 900;
@@ -68,6 +56,6 @@
 }
 
 .endContainer {
-  height: 70px;
+  height: 100px;
   overflow: hidden;
 }
