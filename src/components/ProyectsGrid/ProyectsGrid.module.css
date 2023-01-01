@@ -8,5 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: min-content;
+  /* background-color: red; */
   padding: 10px;
 }

@@ -13,7 +13,21 @@ export const GamesSection = () => {
       <ProyectsGrid>
 
         <Proyect
-          title="The Wall Street Journal"
+          title="Mitosis"
+          imageSize='contain'
+          image="/images/proyects/mitosis.gif">
+          <p>
+            Mitosis is a simple game for Andoroid, where you need to avoid the oncoming enemies.
+            It has more than <b>5,000 downloads</b>
+          </p>
+
+          <a>
+            Play Store Links
+          </a>
+        </Proyect>
+
+        <Proyect
+          title="Nupp"
           image="/images/proyects/wsj.png">
           <p>
             The Wall Street Journal is on of the most import news site on US,

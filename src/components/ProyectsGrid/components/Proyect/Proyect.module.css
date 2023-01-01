@@ -1,6 +1,6 @@
 .proyect {
   width: 560px;
-  height: 400px;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.13);
@@ -11,8 +11,10 @@
 
 .proyectImage {
   width: 100%;
-  height: 300px;
-  background-size: cover;
+  background-color: #444;
+  min-height: 300px;
+  background-position: 50%;
+  background-repeat: no-repeat;
   border-radius: 4px;
 }
 
@@ -27,6 +29,7 @@
 .proyectBody {
   line-height: 1.3em;
   color: #ccc;
+  height: 100%;
 }
 
 .proyectBody a {

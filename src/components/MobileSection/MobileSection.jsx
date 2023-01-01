@@ -13,11 +13,25 @@ export const MobileSection = () => {
       <ProyectsGrid>
 
         <Proyect
-          title="The Wall Street Journal"
-          image="/images/proyects/wsj.png">
+          title="Follow"
+          imageSize='contain'
+          image="/images/proyects/follow.png">
           <p>
-            The Wall Street Journal is on of the most import news site on US,
-            I was part of the <b>Ad Tech Team</b>, ur job was to set the ads on the page, we used techonliges like GPT, prebid, Amazon TAM.
+            Foollow is an Androdi and iOS app
+          that sends your location at specfit time intervals, with the objective of providing security through real-time monitoring.
+          </p>
+          <p>
+            You can view the live website at:
+          </p>
+        </Proyect>
+
+        <Proyect
+          title="Transittion button android"
+          imageSize='contain'
+          image="/images/proyects/transition.gif">
+          <p>
+          It's a android library created by me, that contains a button with screen animations for transition and error states.
+          It has more than <b>130 starts on GitHub</b>
           </p>
           <p>
             You can view the live website at:
