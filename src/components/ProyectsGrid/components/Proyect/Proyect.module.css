@@ -30,7 +30,14 @@
   line-height: 1.3em;
   color: #ccc;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+.proyectBody > * + * {
+  margin-top: 0.5em;
+}
+
 
 .proyectBody a {
   color: var(--highlight-color);

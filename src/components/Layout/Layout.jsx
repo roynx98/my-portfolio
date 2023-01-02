@@ -6,8 +6,8 @@ import { scrollIntoView } from 'seamless-scroll-polyfill'
 const categories = [
   { name: 'About', id: 'about' },
   { name: 'Web', id: 'web' },
+  { name: 'Mobile', id: 'mobile' },
   { name: 'Games', id: 'games' },
-  { name: 'Mobile', id: 'mobile' }
 ];
 
 const Navbar = () => {

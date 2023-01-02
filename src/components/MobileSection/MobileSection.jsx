@@ -17,29 +17,30 @@ export const MobileSection = () => {
           imageSize='contain'
           image="/images/proyects/follow.png">
           <p>
-            Foollow is an Androdi and iOS app
-          that sends your location at specfit time intervals, with the objective of providing security through real-time monitoring.
+            Follow is an iOS and Android app that sends your current location at specfit time intervals, with the objective of providing security through real-time monitoring.
           </p>
-          <p>
-            You can view the live website at:
-          </p>
+          <p>I crated this app from scratch using iOS native techinlogies like UIView and Core Location.</p>
+          <div style={{ flex: 1 }} />
+          <a href="https://apps.apple.com/us/app/ilsp-follow-rastreo-satelital/id1458556399" target="_blank">View it on App Store</a>
         </Proyect>
 
         <Proyect
           title="Transittion button android"
           imageSize='contain'
           image="/images/proyects/transition.gif">
+
           <p>
-          It's a android library created by me, that contains a button with screen animations for transition and error states.
-          It has more than <b>130 starts on GitHub</b>
+            It's a android library  that contains a button with screen animations for transition and error states.
           </p>
           <p>
-            You can view the live website at:
+            I made this library in my free time, now it has more than <b>130 starts on GitHub.</b>
           </p>
+
+          <div style={{ flex: 1 }} />
+
+          <a href="https://apps.apple.com/us/app/ilsp-follow-rastreo-satelital/id1458556399" target="_blank">View it on GitHub</a>
         </Proyect>
-
       </ProyectsGrid>
-
     </Section>
   );
 };

@@ -9,8 +9,8 @@ function App() {
     <Layout>
       <AboutSection />
       <WebSection />
-      <GamesSection />
       <MobileSection />
+      <GamesSection />
     </Layout>
   );
 }

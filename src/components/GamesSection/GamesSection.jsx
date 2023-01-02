@@ -14,28 +14,35 @@ export const GamesSection = () => {
 
         <Proyect
           title="Mitosis"
-          imageSize='contain'
+          imageSize="contain"
           image="/images/proyects/mitosis.gif">
           <p>
-            Mitosis is a simple game for Andoroid, where you need to avoid the oncoming enemies.
-            It has more than <b>5,000 downloads</b>
+            Mitosis is a simple game for Android, where you are a cell that needs to avoid oncoming cell enemies in order to survive.
+          </p>
+          <p>
+            Is the first game that I made, now it has more than <b>5,000 downloads</b>
           </p>
 
-          <a>
-            Play Store Links
-          </a>
+          <div style={{ flex: 1 }} />
+
+          <a href="https://play.google.com/store/apps/details?id=mx.rrodriguezv.game.android" target="_blank">View it on Google Play</a>
         </Proyect>
 
         <Proyect
           title="Nupp"
-          image="/images/proyects/wsj.png">
+          imageSize="contain"
+          image="/images/proyects/nupp.webp">
           <p>
-            The Wall Street Journal is on of the most import news site on US,
-            I was part of the <b>Ad Tech Team</b>, ur job was to set the ads on the page, we used techonliges like GPT, prebid, Amazon TAM.
+            Nuup is challenge minimal puzzle game for Android, your target is try to connect al the block of the same color.
           </p>
+
           <p>
-            You can view the live website at:
+            I made this game as a school proyect.
           </p>
+
+          <div style={{ flex: 1 }} />
+
+          <a href="https://play.google.com/store/apps/details?id=com.royrodriguez.nuupf" target="_blank">View it on Google Play</a>
         </Proyect>
 
       </ProyectsGrid>
