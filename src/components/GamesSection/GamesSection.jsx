@@ -37,7 +37,7 @@ export const GamesSection = () => {
           </p>
 
           <p>
-            I made this game as a school proyect.
+            I made this game as a school project.
           </p>
 
           <div style={{ flex: 1 }} />

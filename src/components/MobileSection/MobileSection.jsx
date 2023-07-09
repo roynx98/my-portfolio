@@ -17,9 +17,9 @@ export const MobileSection = () => {
           imageSize='contain'
           image="/images/proyects/follow.png">
           <p>
-            Follow is an iOS and Android app that sends your current location at specfit time intervals, with the objective of providing security through real-time monitoring.
+            Follow is an iOS and Android app that sends your current location at specific time intervals, with the objective of providing security through real-time monitoring.
           </p>
-          <p>I crated this app from scratch using iOS native techinlogies like UIView and Core Location.</p>
+          <p>I created this app from scratch using iOS native techinlogies like UIView and Core Location.</p>
           <div style={{ flex: 1 }} />
           <a href="https://apps.apple.com/us/app/ilsp-follow-rastreo-satelital/id1458556399" target="_blank">View it on App Store</a>
         </Proyect>
