@@ -13,6 +13,18 @@ export const MobileSection = () => {
       <ProyectsGrid>
 
         <Proyect
+          title="Speak News"
+          imageSize='contain'
+          image="/images/proyects/speakNews.png">
+          <p>
+            SpeakNes is an iOS application for enhancing English proficiency through the practice of reading articles aloud.
+          </p>
+          <p>It was made using SwiftUI and the Apple native Speech API.</p>
+          <div style={{ flex: 1 }} />
+          <a href="https://apps.apple.com/mx/app/speaknews/id6468595137" target="_blank">View it on App Store</a>
+        </Proyect>
+
+        <Proyect
           title="Follow"
           imageSize='contain'
           image="/images/proyects/follow.png">
@@ -37,9 +49,9 @@ export const MobileSection = () => {
           </p>
 
           <div style={{ flex: 1 }} />
-
           <a href="https://apps.apple.com/us/app/ilsp-follow-rastreo-satelital/id1458556399" target="_blank">View it on GitHub</a>
         </Proyect>
+
       </ProyectsGrid>
     </Section>
   );
