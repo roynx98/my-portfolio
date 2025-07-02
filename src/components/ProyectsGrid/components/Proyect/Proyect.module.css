@@ -18,6 +18,14 @@
   border-radius: 4px;
 }
 
+.proyectImageNoCenter {
+  width: 100%;
+  background-color: #444;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
 .proyectTitle {
   text-transform: uppercase;
   font-size: 1.1em;

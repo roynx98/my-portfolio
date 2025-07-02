@@ -45,11 +45,11 @@ export const MobileSection = () => {
             It's a android library  that contains a button with screen animations for transition and error states.
           </p>
           <p>
-            I made this library in my free time, now it has more than <b>130 starts on GitHub.</b>
+            I made this library in my free time, now it has more than <b>150 starts on GitHub.</b>
           </p>
 
           <div style={{ flex: 1 }} />
-          <a href="https://apps.apple.com/us/app/ilsp-follow-rastreo-satelital/id1458556399" target="_blank">View it on GitHub</a>
+          <a href="https://github.com/roynx98/transition-button-android" target="_blank">View it on GitHub</a>
         </Proyect>
 
       </ProyectsGrid>
