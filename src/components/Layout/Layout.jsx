@@ -30,7 +30,8 @@ const Navbar = () => {
         setCurrentCategoryId(lastCategoryId);
       }
     }, {
-      rootMargin: '0px 0px -40% 0px'
+      rootMargin: '0px 0px 0px 0px',
+      threshold: 0.2 
     });
 
     categoriesDom.forEach((category) => {
