@@ -13,11 +13,11 @@ export const About = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <p className={styles.text}>
-          I am a software developer with a passion for learning and problem solving.
+          I’m a software developer specializing in machine learning and AI solutions.
         </p>
 
         <p className={styles.text}>
-          I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.
+          With a solid background in full-stack development and a deep passion for solving real-world problems, I’ve built everything from indie mobile games to scalable backend systems. Over the years, my focus has expanded to AI.
         </p>
 
         <p className={styles.text}>

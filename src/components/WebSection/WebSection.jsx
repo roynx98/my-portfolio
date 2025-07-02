@@ -16,7 +16,7 @@ export const WebSection = () => {
           title="The Wall Street Journal"
           image="/images/proyects/wsj.png">
           <p>
-            The Wall Street Journal is one of the most import news site on US, I was part of the <b>Ad Tech Team</b> we touched fronted and backend, our job was to set the ads on the page, we used techonliges like GPT, prebid, Amazon TAM.
+            As part of the Ad Tech team at one of the most prominent news platforms in the U.S., I worked across both frontend and backend to manage and optimize ad delivery on high-traffic pages. Our work directly influenced ad visibility and revenue. We leveraged technologies like Google Publisher Tags (GPT), Prebid.js, and Amazon TAM to implement and fine-tune ad placements across the site.
           </p>
 
           <div style={{ flex: 1 }} />
@@ -27,7 +27,7 @@ export const WebSection = () => {
           title="Caliente Casino"
           image="/images/proyects/caliente.png">
           <p>
-            Caliente is the biggest online cacino in Mexico, my job was to migrate the old components made with Backbone to React.
+            Contributed to the modernization of Caliente’s platform by implementing new features and doing the migration of legacy components from Backbone.js to React. This work improved maintainability, performance, and user experience across the site.
           </p>
           <div style={{ flex: 1 }} />
           <a href="https://www.caliente.mx/casino" target="_blank">View the live website</a>
