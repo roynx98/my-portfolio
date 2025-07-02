@@ -14,7 +14,6 @@ export const IASection = () => {
 
         <Proyect
           title="Generative Fortune Cookie"
-          centerImage={false}
           image="/images/proyects/cookie.gif">
           <p>
             A alnguage model implemented by a decoder transfromer built from scratch using PyTorch to generate fortune cookies messages, I trained it with a dataset of 2000 fortune cookies, the model is able to generate new ones.
