@@ -16,7 +16,7 @@ const Navbar = () => {
   const navbarRef = useRef();
 
   useEffect(() => {
-    const categoriesDom = document.querySelectorAll('.category');
+    const categoriesDom = document.querySelectorAll('.intersection-mark');
     let lastCategoryId = currentCategoryId;
 
     const observer = new IntersectionObserver((entries) => {
@@ -24,14 +24,15 @@ const Navbar = () => {
       if (!entry) {
         return;
       }
-      const { id } = entry.target;
+      const id = entry.target.getAttribute('data-belongs');
+
       if (id !== lastCategoryId) {
         lastCategoryId = id;
         setCurrentCategoryId(lastCategoryId);
       }
     }, {
       rootMargin: '0px 0px 0px 0px',
-      threshold: 0.2 
+      threshold: 1
     });
 
     categoriesDom.forEach((category) => {
