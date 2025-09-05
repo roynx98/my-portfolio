@@ -6,21 +6,31 @@ import { Section } from '../Section/Section';
 export const IASection = () => {
   return (
     <Section
-      title="Artificial Intelligence"
+      title="AI FLOWS"
       id="ai"
       image="/images/ml.png">
 
       <ProyectsGrid>
 
         <Proyect
-          title="Generative Fortune Cookie"
-          image="/images/proyects/cookie.gif">
-          <p>A language model implemented from scratch using a decoder only transformer in PyTorch, trained on a dataset of 2,000 real fortune cookie messages.</p>
-          <p>
-            The model generates new, original fortunes with surprising accuracy and charm. It’s deployed on AWS, with the model hosted on S3 and served through an EC2 instance. The user-facing interface was built with Gradio.
-          </p>
+          title="CRM with Airtable/GHL Integration and Zoom AI Meeting Reports"
+          imageSize='contain'
+          backgroundPosition='center'
+          image="/images/proyects/crm-zoom.png">
+            <p>It’s a n8n flow where, when the user fills out a form, a new contact is added to GHL/Airtable and placed into a pipeline. I also trigger a GHL campaign to send an email as soon as the contact enters the pipeline.</p>
+            <p>The email includes a Zoom meeting link for a follow up. After the meeting ends, I capture the transcription and generate an AI summary. I use Airtable to store both the lead details and the meeting information.</p>
           <div style={{ flex: 1 }} />
-          <a href="https://github.com/roynx98/generative-fortune-cookie" target="_blank">Check it on GitHub</a>
+          <a href="https://www.loom.com/share/6f1e3afd1d1348e68b99f117efd7a2c9" target="_blank">Check a Loom video</a>
+        </Proyect>
+
+        <Proyect
+          title="Notion/Google Doc AI Report with Slack alerts"
+          imageSize='cover'
+          backgroundPosition='center'
+          image="/images/proyects/notion.png">
+            <p>A n8n flow, that generates a report from multiple sources, including a Notion page, then add a new row to a Notion database with the generated data, and finally send a message to Slack with a link to the Notion database.</p>
+          <div style={{ flex: 1 }} />
+          <a href="https://www.loom.com/share/3ca67deb6d0a4403970cba7e4c49520b?sid=65f26883-90b6-4857-bef7-950b0950e23d" target="_blank">Check a Loom video</a>
         </Proyect>
 
       </ProyectsGrid>

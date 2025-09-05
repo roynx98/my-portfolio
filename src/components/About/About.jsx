@@ -13,7 +13,7 @@ export const About = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <p className={styles.text}>
-          I’m a software developer specializing in machine learning and AI solutions.
+          I’m a software developer specializing in business automations using AI.
         </p>
 
         <p className={styles.text}>
