@@ -13,11 +13,14 @@ export const About = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <p className={styles.text}>
-          I’m a software developer specializing in business automations using AI.
-        </p>
+          Software developer focused on JavaScript, with full-stack experience and a drive for building things that actually matter.
+       </p>
 
         <p className={styles.text}>
-          With a solid background in full-stack development and a deep passion for solving real-world problems, I’ve built everything from indie mobile games to scalable backend systems. Over the years, my focus has expanded to AI.
+          From creating React resoponsive UI interfaces to scalable backend systems using Node.js.
+        </p>
+        <p className={styles.text}>
+          leverage AI tools like Claude Code to move faster without cutting corners.
         </p>
 
         <p className={styles.text}>

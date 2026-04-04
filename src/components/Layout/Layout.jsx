@@ -5,7 +5,6 @@ import { scrollIntoView } from 'seamless-scroll-polyfill'
 
 const categories = [
   { name: 'About', id: 'about' },
-  { name: 'AI', id: 'ai' },
   { name: 'Web', id: 'web' },
   { name: 'Mobile', id: 'mobile' },
   { name: 'Games', id: 'games' },
