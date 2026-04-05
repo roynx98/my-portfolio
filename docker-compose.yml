@@ -1,5 +1,0 @@
-services:
-  my-portfolio:
-    build: .
-    ports:
-      - "3000:80"
